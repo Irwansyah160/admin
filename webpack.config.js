@@ -118,7 +118,7 @@ module.exports = {
   devServer: {
     contentBase: Path.join(__dirname, "static"),
     compress: true,
-    port: 8080,
+    port: listen(process.env.PORT || 8080),
     open: true
   }
 };
